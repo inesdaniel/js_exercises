@@ -14,10 +14,16 @@
   <p onclick="completed(this)">Wash car</p>
   <p onclick="completed(this)">Get laundry</p>
 
+  <button onclick="hideCompletedTasks()">Hide completed tasks</button>
   <script>
     function completed(ptag) {
       console.log(ptag);
       ptag.classList.toggle('complete');
+    }
+
+    function hideCompletedTasks() {
+      var completedTasks = document.querySelectorAll('.complete');
+      console.log(completedTasks);
     }
   </script>
 </body>
