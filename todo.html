@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+  <style type="text/css">
+    .complete {
+      text-decoration: line-through;
+    }
+
+  </style>
+</head>
+<body>
+  <p onclick="completed(this)">Pay bills</p>
+  <p onclick="completed(this)">Wash car</p>
+  <p onclick="completed(this)">Get laundry</p>
+
+  <script>
+    function completed(ptag) {
+      console.log(ptag);
+      ptag.classList.toggle('complete');
+    }
+  </script>
+</body>
+</html>
